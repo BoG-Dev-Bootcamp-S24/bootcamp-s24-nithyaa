@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Nithyaa Bala </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/nithyaa.png">
+    </head>
+<!-- Your HTML Here -->
+
+    <body id="backg" id = "id" class = "center">
+        <h1>Get To Know Nithyaa</h1>
+
+    <p>
+    Nithyaa is a 1st year Computer Science major from San Diego, CA. She loves working with kids and encouraging change.
+    </p>
+
+    <div>
+        <img id = "profilepic" src="img/nithyaa.png" />
+    </div>
+
+    <h1> Press the buttons below to see Nithyaa's favorite animal, flower, and coding language!</h1>
+
+
+    <div id="buttons">
+        <div>
+            <img class="favThing" id="favAnimal" src="img/gr.jpg" style="display: none;" />
+        </div>
+        
+        <button class = "button"type="button" onclick="show('favAnimal', 'btnAnimal')">
+            Animal
+        </button>
+        <div id="spacing"> </div>
+        <div>
+            <img class="favThing" id="favFlower" src="img/plump.jpg" style="display: none;" />
+        </div>
+        <button class = "button" type="button" onclick="show('favFlower', 'btnFlower')">
+            Flower
+        </button>
+        <div id="spacing"> </div>
+        <div>
+            <img class="favThing" id="favCoding" src="img/pylogo.jpg" style="display: none;" />
+        </div>
+        <button class = "button" type="button" onclick="show('favCoding', 'btnCoding')">
+            Coding Language
+        </button>
+    </div>
+
+    <script>
+        function show(imageId, buttonId) {
+            document.getElementById(imageId).style.display = "block";
+            document.getElementById(buttonId).style.display = "none";
+        }
+    </script>
+    
+    
+
+    </body>
+
+
+</html>
