@@ -16,7 +16,22 @@
  * F = anything < 60
  */
 function toLetterGrade(numGrade) {
-  // TODO
+// var grade = prompt("Give me an integer");
+  if (grade >= 60 && grade <= 69 ){
+    console.log("D");
+  }
+  else if (grade >= 70 && grade <= 79){
+    console.log("C");
+  }
+  else if (grade >= 80 && grade <= 89){
+    console.log("B");
+  }
+  else if (grade >= 90 && grade <= 100){
+    console.log("A");
+  }
+  else{
+    console.log("F");
+  }
 }
 
 /**
@@ -27,7 +42,8 @@ function toLetterGrade(numGrade) {
  * Example: [9, 3, 4, 1, 2, 0] --> [4, 2, 0]
  */
 function getEvenElements(array) {
-  // TODO
+  const evenElements = array.filter(element => element %2 === 0);
+  return evenElements;
 }
 
 /**
@@ -40,8 +56,18 @@ function getEvenElements(array) {
  * Example: "I love Bits of Good" --> 4
  */
 function findLongestWord(string) {
-  // TODO
+  const words = string.split(" ");
+  console.log(words);
+  let maxL = 0;
+  for (let word of words) {
+    if (word.length > maxL) {
+      maxL = word.length;
+    }
+  }
+  return maxL;
 }
+
+console.log(findLongestWord("I love Bits of Good"));
 
 /**
  * Task 4: Create a function that takes in 2 objects and return an object that 
@@ -66,7 +92,13 @@ function findLongestWord(string) {
  */
 function combineObjects(object1, object2) {
   // TODO
+  const combo = {
+    ...object1,
+    ...object2
+  }
+  return combo;
 }
+console.log(combo);
 
 /**
  *  Task 5: Create a function that takes an array as an argument and returns
@@ -78,6 +110,10 @@ function combineObjects(object1, object2) {
  */
 function reverseArr(array) {
   // TODO
+  const reversedArray = array.map((element, index, originalArray) => {
+    return originalArray[originalArray.length - 1 - index];
+  });
+  return reversedArray;
 }
 
 // DO NOT EDIT BELOW THIS LINE -- the code is for testing purposes only!
