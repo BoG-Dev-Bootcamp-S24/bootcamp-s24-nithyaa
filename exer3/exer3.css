@@ -1,0 +1,136 @@
+/* YOUR STYLES HERE */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+#menu{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    font-size: 14 px;
+    color: black;
+    margin: 0px 10px;
+    text-decoration: none;
+    background-color: #60B6F0;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+#profile-pic{
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+
+
+#profile-pic:hover{
+    box-shadow: 0px 0px 5px #C2C2C2;
+}
+
+#store-link{
+    margin-right: auto;
+}
+
+#search{
+    margin-top: 120px;
+    text-align: center;
+}
+
+#main-logo{
+    width:272px
+}
+
+#search-bar{
+    height:34px;
+    font-size: 17px;
+    border-radius:17px;
+
+    border: 1px solid #C2C2C2;
+    width: 90%;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    background-color: #C2C2C2;
+}
+#enter-bar{
+    height:34px;
+    font-size: 17px;
+    border-radius:17px;
+
+    border: 1px solid #C2C2C2;
+    width: 90%;
+    max-width: 50px;
+    padding-left: 20px;
+    padding-right: 18px;
+    margin-top: 30px;
+    background-color: #60B6F0;
+}
+
+#search-bar:hover,
+#search-bar:focus{
+    box-shadow: 0px 0px 5px #C2C2C2;
+
+}
+
+
+
+#search-buttons{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button{
+    margin: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+
+    background-color: #f8f9fa;
+    border: 1px solid #4b4b4b;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+
+.search-button:hover{
+    box-shadow: 0px 0px 5px #C2C2C2;
+}
+
+#backg{
+    background:#89d6eb
+}
+
+#id{
+    align-items: center;
+}
+
+#image{
+    display: none;
+}
+
+#imageW{
+    width: 300px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+#creator{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#line{
+    margin-top:300px;
+}
