@@ -1,12 +1,13 @@
-// URL variables for the APIs
-
-
-document.getElementById('nameForm').addEventListener('submit', (event) => {
+document.getElementById('nameForm').addEventListener('submit', async (event) => {
     event.preventDefault();
     const name = document.getElementById('nameInput').value;
-    console.log(name);
+  
+    // Constructing API URLs
+    //age-
     const agifyUrl = `https://api.agify.io?name=${name}`;
+    //gender-
     const genderizeUrl = `https://api.genderize.io?name=${name}`;
+    //nationality-
     const nationalizeUrl = `https://api.nationalize.io?name=${name}`;
 
     // Students will write async code here to fetch data from the APIs
