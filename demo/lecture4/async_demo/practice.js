@@ -11,7 +11,14 @@ document.getElementById('nameForm').addEventListener('submit', (event) => {
 
     // Students will write async code here to fetch data from the APIs
     // and update the DOM with the results.
-    
+
+    async function displayAge(){
+        const response = await fetch(agifyUrl);
+        const data1 = await response.json();
+        Document.getElementById("")
+        document.getElementById("ageResult").innerHTML = data1.name;
+    }
+
     // They should use Promise.all to handle the multiple fetch requests.
     
     // Error handling should also be implemented.
