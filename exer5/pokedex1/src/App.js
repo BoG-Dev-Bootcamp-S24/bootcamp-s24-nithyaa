@@ -1,4 +1,3 @@
-// App.js
 import React, { useEffect, useState } from "react";
 import './App.css';
 import Infomoves from './components/Infomoves';
@@ -50,7 +49,10 @@ function App() {
       <h1 className="App-header">Exercise 5 - PokeDex!</h1>
       {pokeJSON && (
         <div className="App-content">
-          <Pokevisual pokeJSON={pokeJSON} />
+          <div className="poke-info-container">
+            <Pokevisual pokeJSON={pokeJSON} />
+            <Typesandbutt types={pokeJSON.types} />
+          </div>
           <Infomoves
             height={pokeJSON.height}
             weight={pokeJSON.weight}
@@ -61,13 +63,13 @@ function App() {
       )}
       <div className="spacer"></div>
       
-      <div>
+      <div className="button-container">
         <button onClick={lastPoke}>
-          <img src="/Users/nithyaab/Documents/GitHub/bootcamp-s24-nithyaa/exer5/pokedex1/left.png" alt="Previous" />
+          &lt;
         </button>
         
         <button onClick={nextPoke}>
-          <img src="/Users/nithyaab/Documents/GitHub/bootcamp-s24-nithyaa/exer5/pokedex1/right.png" alt="Next" />
+          &gt;
         </button>
       </div>
     </div>

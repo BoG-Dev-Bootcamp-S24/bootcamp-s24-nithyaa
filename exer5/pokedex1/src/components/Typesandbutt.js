@@ -42,18 +42,20 @@ const Typesandbutt = ({ types }) => {
     }
 
     return (
-        <div className="flex">
-            {types.map((type, index) => (
-              <div 
-                key={index} 
-                style={{ width: '70px', height: '30px', backgroundColor: getTypeColor(type.type.name) }}
-              >
-                {type.type.name}
-              </div>
-            ))}
-          </div>
-      );
-
-}
-
-export default Typesandbutt;
+      <div>
+        <h2 style={{ marginRight: '250px', fontSize: '16px' }}>Types:</h2>
+        <div id="typeS">
+          {types.map((type, index) => (
+            <div
+              key={index}
+              style={{ backgroundColor: getTypeColor(type.type.name), marginRight: '5px', width: '50px', height: '30px' }}
+            >
+              {type.type.name}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+  
+  export default Typesandbutt;

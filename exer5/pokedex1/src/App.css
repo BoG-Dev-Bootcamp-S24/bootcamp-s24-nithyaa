@@ -58,10 +58,11 @@
   border: 1px solid #000000;
   overflow:scroll; 
   display: flex;
+  background-color: rgb(210, 210, 210);
 }
 
 .spacer {
-  height: 20px; 
+  height: 15px; 
 }
 
 
@@ -105,4 +106,31 @@ body {
 
 .app-butt{
   align-items:flex-start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 70px; /* Adjust this value to your preference */
+}
+
+.button-container button {
+  margin-right: 10px; /* Adjust this value to your preference */
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#typeS {
+  display: flex;
+  
+}
+
+#typeS div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  
+
 }

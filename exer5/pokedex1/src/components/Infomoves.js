@@ -10,30 +10,36 @@ const Infomoves = ({ height, weight, stats, moves }) => {
 
   return (
     <div className= "Infomoves">
+      <h1>{showStats ? 'Info' : 'Moves'}</h1>
+
       <div className='info-container'>
         {showStats ? (
-          <ul>
-            <li>height: {height}</li>
-            <li>weight: {weight}</li>
-            {stats.map((stat, index) => (
-              <li key={index}>
-                {stat.stat.name}: {stat.base_stat}
-              </li>
-            ))}
-          </ul>
+          <div>
+            <ul>
+              <li>height: {height}</li>
+              <li>weight: {weight}</li>
+              {stats.map((stat, index) => (
+                <li key={index}>
+                  {stat.stat.name}: {stat.base_stat}
+                </li>
+              ))}
+            </ul>
+          </div>
         ) : (
-          <ul>
-            {moves.map((move, index) => (
-              <li key={index}>{move.move.name}</li>
-            ))}
-          </ul>
+          <div>
+            <ul>
+              {moves.map((move, index) => (
+                <li key={index}>{move.move.name}</li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
       
       <div className='spacer'></div>
 
       <div>
-        <button id = "infoButton" onClick={toggleDisplay}>Info</button>
+        <button id="infoButton" onClick={toggleDisplay}>Info</button>
         <button id="movesButton" onClick={toggleDisplay}>Moves</button>
       </div>
       <div className='spacer'></div>
